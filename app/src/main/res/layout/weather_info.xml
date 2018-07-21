@@ -57,8 +57,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
+        android:layout_below="@id/title"
         android:background="@drawable/biz_plugin_weather_shenzhen_bg"
         android:orientation="vertical">
         <!--今日天气-->
@@ -205,7 +204,7 @@
                     android:singleLine="true"
                     android:text="-2℃~7℃"
                     android:textColor="@android:color/white"
-                    android:textSize="30.0sp"/>
+                    android:textSize="30.0sp" />
                 <!-- 天气状况 -->
                 <TextView
                     android:id="@+id/climate"
@@ -217,9 +216,10 @@
                     android:singleLine="true"
                     android:text="多云转晴"
                     android:textColor="@android:color/white"
-                    android:textSize="20.0sp"/>
+                    android:textSize="20.0sp" />
                 <!-- 风力信息 -->
-                <TextView android:id="@+id/wind"
+                <TextView
+                    android:id="@+id/wind"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/climate"
